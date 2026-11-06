@@ -1,0 +1,50 @@
+/* Container queries for Graphic.svelte (global CSS)
+   Responsive resizing for .hed and .dek, matching ai2html */
+@container (min-width: 300px) {
+  .figure-wrapper .hed,
+  .figure-wrapper .dek,
+  .figure-wrapper .gfxfooter,
+  .figure-wrapper .source,
+  .figure-wrapper .byline { max-width: 300px !important; }
+  .figure-wrapper figure { max-width: 300px !important; }
+}
+
+@container (min-width: 350px) {
+  .figure-wrapper .hed,
+  .figure-wrapper .dek,
+  .figure-wrapper .gfxfooter,
+  .figure-wrapper .source,
+  .figure-wrapper .byline { max-width: 350px !important; }
+  .figure-wrapper figure { max-width: 350px !important; }
+}
+
+@container (min-width: 516px) {
+  .figure-wrapper .hed,
+  .figure-wrapper .dek,
+  .figure-wrapper .gfxfooter,
+  .figure-wrapper .source,
+  .figure-wrapper .byline { max-width: 516px !important; }
+  .figure-wrapper figure { max-width: 516px !important; }
+}
+
+@container (min-width: 600px) {
+  .figure-wrapper .hed,
+  .figure-wrapper .dek,
+  .figure-wrapper .gfxfooter,
+  .figure-wrapper .source,
+  .figure-wrapper .byline { max-width: 600px !important; }
+  .figure-wrapper .hed { font-size: 28px !important; line-height: 34px !important; }
+  .figure-wrapper .dek { font-size: 18px !important; line-height: 22px !important; }
+  .figure-wrapper figure { max-width: 600px !important; }
+}
+
+@container (min-width: 930px) {
+  .figure-wrapper .hed,
+  .figure-wrapper .dek,
+  .figure-wrapper .gfxfooter,
+  .figure-wrapper .source,
+  .figure-wrapper .byline { max-width: 930px !important; }
+  .figure-wrapper .hed { font-size: 28px !important; line-height: 34px !important; }
+  .figure-wrapper .dek { font-size: 18px !important; line-height: 22px !important; }
+  .figure-wrapper figure { max-width: 930px !important; }
+}

@@ -1,0 +1,119 @@
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-Light.otf') format('otf');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-LightItalic.otf') format('otf');
+	font-weight: 300;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-Regular.otf') format('otf');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-Medium.otf') format('otf');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-MediumItalic.otf') format('otf');
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-Bold.otf') format('otf');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-BlackItalic.otf') format('otf');
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-Black.otf') format('otf');
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Garnett;
+	src: url('./fonts/Garnett-BlackItalic.otf') format('otf');
+	font-weight: 900;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+
+.gi-sans {
+	font-family: var(--gi-sans) !important;
+}
+.gi-serif {
+	font-family: var(--gi-serif) !important;
+}
+.gi-display {
+	font-family: var(--gi-tiemposhed) !important;
+}
+.gi-mono {
+	font-family: var(--gi-mono) !important;
+}
+.gi-metric {
+	font-family: var(--gi-metric) !important;
+}
+.gi-thin {
+	font-weight: 100 !important;
+}
+.gi-extralight {
+	font-weight: 200 !important;
+}
+.gi-light {
+	font-weight: 300 !important;
+}
+.gi-regular {
+	font-weight: 400 !important;
+}
+.gi-medium {
+	font-weight: 500 !important;
+}
+.gi-semibold {
+	font-weight: 600 !important;
+}
+.gi-bold {
+	font-weight: 700 !important;
+}
+.gi-extrabold {
+	font-weight: 800 !important;
+}
+.gi-black {
+	font-weight: 900 !important;
+}
+.gi-italic {
+	font-style: italic !important;
+}

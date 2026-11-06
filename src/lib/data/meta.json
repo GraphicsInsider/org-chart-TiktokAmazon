@@ -1,0 +1,18 @@
+{
+	"CAPIurl": "",
+	"google": {
+		"sheet": [
+			{
+				"id": "1-bA2oxHDPbGBzA9Jpv6UbsjFk0Gi-7TGwE2fIoRUMt8",
+				"gid": "0",
+				"filepath": "src/lib/data/orgData.csv"
+			}
+		],
+		"doc": [
+			{
+				"id": "",
+				"filepath": ""
+			}
+		]
+	}
+}

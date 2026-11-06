@@ -1,0 +1,5 @@
+@import '$lib/styles/fonts/fonts.css';
+@import '$lib/styles/font.css';
+html, body {
+  font-family: 'Garnett', sans-serif !important;
+}
