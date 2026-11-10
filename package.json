@@ -12,8 +12,8 @@
   ],
   "scripts": {
     "dev": "vite --host --mode development",
-		"build": "vite build --mode production && node node_scripts/version-build.js && cat build/index.html | pbcopy && node node_scripts/deploy.js",
-		"build:preview": "vite build --mode production && node node_scripts/version-build.js && node node_scripts/deploy.js",
+		"build": "vite build --mode production && cat build/index.html | pbcopy && node node_scripts/deploy.js",
+		"build:preview": "vite build --mode production && node node_scripts/deploy.js",
     "deploy": "node node_scripts/deploy.js",
     "gdoc": "node node_scripts/fetch-google-doc.js",
     "data": "node node_scripts/fetch-sheet.js",

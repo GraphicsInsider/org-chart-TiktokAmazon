@@ -31,18 +31,22 @@
 
 		{#if note || source || byline}
 			<div class="gfxfooter mx-0 mt-2">
-				{#if note}
-					<span class="note-inline">
-						Note: {note}
-						{#if source}
-							<span class="separator" aria-hidden="true">•</span>
-							<span class="source-inline">Source: {source}</span>
+				{#if note || source}
+					<div class="footer-details">
+						{#if note}
+							<span class="note-inline">
+								Note: {note}
+								{#if source}
+									<span class="separator" aria-hidden="true">•</span>
+									<span class="source-inline">Source: {source}</span>
+								{/if}
+							</span>
+						{:else}
+							<span class="source">Source: {source}</span>
 						{/if}
-					</span>
-				{:else if source}
-					<span class="source d-block">Source: {source}</span>
+					</div>
 				{/if}
-				{#if byline}<span class="byline d-block">{byline}/BI</span>{/if}
+				{#if byline}<div class="byline">{byline}/BI</div>{/if}
 			</div>
 		{/if}
 	</figure>
@@ -111,6 +115,12 @@
 	.source-inline {
 		display: inline;
 	}
+	.footer-details,
+	.footer-details .note-inline,
+	.footer-details .source-inline,
+	.footer-details .separator {
+		line-height: 15px;
+	}
 	.separator {
 		display: inline;
 		margin: 0 0.2rem;
@@ -125,7 +135,7 @@
 	}
 
 	.byline {
-		margin-top: 0.25rem;
+		margin-top: 10px;
 	}
 	.source {
 		margin-top: 0.125rem;
@@ -137,6 +147,8 @@
 	}
 	.gfxfooter {
 		text-align: left;
+		font-size: 11px;
+		line-height: 13px;
 	}
 	.gfxfooter:after {
 		background-color: var(--bi-white) !important;

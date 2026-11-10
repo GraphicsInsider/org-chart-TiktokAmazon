@@ -12,9 +12,13 @@
 	export let hasSelectedDescendant = false;
 	export let isTopPerson = false;
 
-	$: optionalFields = [orgData.field1, orgData.field2, orgData.field3]
-		.map((field) => field?.trim())
-		.filter(Boolean);
+	$: optionalFields = [
+		{ name: 'field1', value: orgData.field1 },
+		{ name: 'field2', value: orgData.field2 },
+		{ name: 'field3', value: orgData.field3 }
+	]
+		.map((field) => ({ ...field, value: field.value?.trim() }))
+		.filter((field) => field.value);
 	$: isInteractive = hasChildren || onSelect;
 
 	const triggerClick = () => {
@@ -45,7 +49,7 @@
 		<div class="card-info d-flex flex-column flex-grow-1 overflow-hidden">
 			{orgData.name}
 			{#each optionalFields as field}
-				<p class="m-0">{field}</p>
+				<p class="m-0" class:field-two={field.name === 'field2'}>{field.value}</p>
 			{/each}
 		</div>
 
@@ -106,6 +110,13 @@
 
 	.card-wrapper.has-children > .card-content > .card-info {
 		padding-bottom: 0.8rem;
+	}
+
+	.field-two {
+		font-size: 13px;
+		background-color: var(--bi-teal-4);
+		padding: 5px;
+		border-radius: 4px;
 	}
 
 	.card-wrapper.has-children:hover {

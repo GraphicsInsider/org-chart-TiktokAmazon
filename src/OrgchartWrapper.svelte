@@ -10,7 +10,7 @@
 	<!--dek="An overview of TikTok Shop’s organizational structure, including its teams, leaders, and reporting relationships."
 	legend={[]}
 	byline="Priyanka Karnam"
-	note="Some employees without direct reports not shown."
+	note="Some employees without direct reports not shown. Previous employment information sourced from LinkedIn."
 	<!--source="tk tk" -->
 
 	<Org />
